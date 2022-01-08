@@ -1,0 +1,30 @@
+/*만들어 두면 편한 Utility class*/
+.f-samll {
+  font-size: 12px;
+}
+
+.f-mid {
+  font-size: 16px;
+}
+
+.f-lg {
+  font-size: 20px;
+}
+
+/* 뼈대 디자인 class */
+.main-btn {
+  padding: 15px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  background-color: red;
+}
+
+/* 색깔 디자인 class */
+.bg-red {
+  background-color: red;
+}
+
+.bg-blue {
+  background-color: blue;
+}

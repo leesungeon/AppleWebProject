@@ -1,0 +1,116 @@
+// IMAGE //
+
+* 이미지 가운데 정렬
+display : block; (한 행을 전부 차지)
+margin-left : auto;
+margin-right : auto;
+
+
+// BOX //
+
+* box 가운데 정렬 (div, p, h 는 display : block 기본값)
+margin-left : auto;
+margin-right : auto;
+
+* box 가로 정렬
+float : left
+
+- float 다음에 오는 요소 (float로 발생하는 현상 해결)
+clear : both
+
+or
+display : inline-block (내 크기만큼 차지)
+
+- inline-block 사용시 공백 제거 방법
+부모태그에 font-size : 0px;
+
+- inline-block 사용시 글씨 배치 해결 방법
+vertical-align : top;
+
+
+// TEXT //
+
+* 글자 정렬
+text-align : center;
+
+
+// POSITION //
+
+position : static
+- 좌표 이동 x
+
+position : fixed
+- 현재 화면이 기준(상단 고정 메뉴, 오른쪽 하단 빠른 상담 탭)
+
+position : relative
+- 공중에 뜸, 좌표이동가능
+
+position : absolute
+- 내 부모 태그 중에 position:relative 가진 부모 기준
+- 가운데 정렬
+left : 0;
+right : 0;
+margin : auto;
+width : {width}px;
+
+
+// 기본 설정 //
+div {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+html {
+  line-height: 1.15;
+}
+
+검색 : normalize.css
+
+// a태그 파란색 보라색 없애기 //
+a:link {
+  color: #58595b;
+  text-decoration: none;
+}
+
+// a태그 방문 전 링크 스타일
+a:link{}
+
+a:visited {
+  color: #58595b;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #58595b;
+  text-decoration: none;
+}
+
+a:active {
+  color: #58595b;
+  text-decoration: none;
+}
+
+
+// TABLE //
+vertical-align
+- inline/inline-block 요소 간의 세로정렬할 때
+- 테이블 안에서 세로정렬 할 때
+
+
+// BUTTTON / INPUT //
+- 커서 변경
+cursor : pointer;
+
+- 마우스 올릴 때 스타일
+.btn : hover{
+}
+
+- 커서 찍혀있을 때 스타일
+.btn : focus{}
+
+
+- 클릭 중 스타일
+.btn : active{}
