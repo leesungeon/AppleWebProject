@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>jQuery</title>
+
+        <link rel="stylesheet" href="/main.css">
+        <!-- jQuery Core -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <h4 id="test">안녕하세요</h4>
+        <h4 class="test">안녕하세요</h4>
+        <h4 class="test">안녕하세요</h4>
+        <h4 class="test">안녕하세요</h4>
+
+        <h4 id="test2">마삼중입니다.</h4>
+        <h4 class="test2">마삼중입니다.</h4>
+        <h4 class="test2">마삼중입니다.</h4>
+        <h4 class="test2">마삼중입니다.</h4>
+
+        <button class="btn">버튼btn</button>
+        <button class="btn2">버튼btn</button>
+        <button class="btn3">버튼btn</button>
+        
+        <script>
+            $('#test').text("마삼중 마삼중 신나는 노래!");
+            $('#test2').html("나도 한 번 불러본다!");
+
+            $('#test').css('color', 'red');
+            $('#test').addClass('yellow-bg');
+
+            $('.test').text('마삼중 마삼중 신나는 노래!');
+            $('.test2').eq(0).text('나도 한 번 불러본다!');
+
+            $('.btn').on('click', function(){
+                $('.test').hide();
+            });
+
+            $('.btn2').on('click', function(){
+                $('.test').show();
+            });
+        </script>
+    </body>
+</html>
